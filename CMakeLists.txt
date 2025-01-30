@@ -49,10 +49,13 @@ if(ENABLE_TESTING)
     # Enlazar GoogleTest
     target_link_libraries(test_Operaciones PRIVATE gtest gtest_main)
 
+    # Crear ejecutable de pruebas
+    add_executable(test tests/test.cpp)
+
+    # Enlazar GoogleTest
+    target_link_libraries(test PRIVATE gtest gtest_main)
 
     # Registrar pruebas con CTest
     add_test(NAME AllTests COMMAND test_suite)
-add_test(NAME test_Factorial COMMAND test_Factorial)
-add_test(NAME test_Operaciones COMMAND test_Operaciones)
 
 endif()

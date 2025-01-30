@@ -1,4 +1,4 @@
-#include "../MetodosFactorial.h"
+#include "MetodosFactorial.h"
 #include <gtest/gtest.h>
 
 TEST(CombinatoriaTest, Factorial) {
