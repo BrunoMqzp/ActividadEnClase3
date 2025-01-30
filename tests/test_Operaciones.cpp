@@ -1,4 +1,4 @@
-#include "C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/MetodosOperaciones.h"
+#include "MetodosOperaciones.h"
 #include <gtest/gtest.h>
 
 TEST(OperacionesTest, Suma) {

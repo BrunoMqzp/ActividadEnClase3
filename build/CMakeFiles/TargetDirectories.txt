@@ -1,5 +1,6 @@
 C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/unit_test.dir
-C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/test_suite.dir
+C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/test_Factorial.dir
+C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/test_Operaciones.dir
 C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/RUN_TESTS.dir
 C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/INSTALL.dir
 C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/build/CMakeFiles/ALL_BUILD.dir

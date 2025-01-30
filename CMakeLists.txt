@@ -8,6 +8,7 @@ set(SOURCES
         MyMathLib.h
 	MetodosFactorial.h
 	MetodosOperaciones.h
+
 )
 
 
@@ -37,11 +38,21 @@ if(ENABLE_TESTING)
     )
 
     # Crear ejecutable de pruebas
-    add_executable(test_suite ${TEST_SOURCES})
+    add_executable(test_Factorial tests/test_Factorial.cpp)
 
     # Enlazar GoogleTest
-    target_link_libraries(test_suite PRIVATE gtest gtest_main)
+    target_link_libraries(test_Factorial PRIVATE gtest gtest_main)
+
+    # Crear ejecutable de pruebas
+    add_executable(test_Operaciones tests/test_Operaciones.cpp)
+
+    # Enlazar GoogleTest
+    target_link_libraries(test_Operaciones PRIVATE gtest gtest_main)
+
 
     # Registrar pruebas con CTest
     add_test(NAME AllTests COMMAND test_suite)
+add_test(NAME test_Factorial COMMAND test_Factorial)
+add_test(NAME test_Operaciones COMMAND test_Operaciones)
+
 endif()

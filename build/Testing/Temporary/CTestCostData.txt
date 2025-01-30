@@ -1,2 +1,7 @@
-AllTests 1 0.0323209
+test_Factorial 2 0
+AllTests 0 0
+test_Operaciones 0 0
 ---
+AllTests
+test_Factorial
+test_Operaciones

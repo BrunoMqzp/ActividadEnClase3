@@ -1,4 +1,4 @@
-#include "C:/VS/PROJECTS/SINTAXIS/GITHUB/ActividadEnClase3/MetodosFactorial.h"
+#include "MetodosFactorial.h"
 #include <gtest/gtest.h>
 
 TEST(CombinatoriaTest, Factorial) {
