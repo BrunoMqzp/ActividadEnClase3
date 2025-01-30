@@ -32,7 +32,7 @@ if(ENABLE_TESTING)
 
     # Archivos de pruebas
     set(TEST_SOURCES
-        test.cpp
+        tests/test.cpp
 	tests/test_Factorial.cpp
 	tests/test_Operaciones.cpp
     )
