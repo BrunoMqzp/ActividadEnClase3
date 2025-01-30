@@ -1,0 +1,41 @@
+cmake_minimum_required(VERSION 3.14)
+project(unit_test)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Incluir módulo FetchContent
+include(FetchContent)
+
+# Declarar GoogleTest
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/release-1.12.1.zip
+)
+
+# Prevenir la anulación de configuraciones del compilador/enlazador en Windows
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
+# Hacer disponible GoogleTest
+FetchContent_MakeAvailable(googletest)
+
+# Fuentes del proyecto
+set(SOURCES
+    main.cpp
+    MyMathLib.h
+    MetodosFactorial.h
+    MetodosOperaciones.h
+
+)
+
+# Añadir ejecutable para pruebas de operaciones
+add_executable(test_Operaciones tests/test_Operaciones.cpp ${SOURCES})
+target_link_libraries(test_Operaciones gtest gtest_main)
+
+# Añadir ejecutable para pruebas de combinatoria
+add_executable(test_Factorial tests/test_Factorial.cpp ${SOURCES})
+target_link_libraries(test_Factorial gtest gtest_main)
+
+# Registrar pruebas
+include(GoogleTest)
+gtest_discover_tests(test_Operaciones)
+gtest_discover_tests(test_Factorial)
