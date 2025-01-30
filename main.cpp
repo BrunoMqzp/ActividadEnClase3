@@ -1,5 +1,7 @@
 #include <iostream>
 #include "MyMathLib.h"
+#include "MetodosFactorial.h"
+#include "MetodosOperaciones.h"
 
 int main()
 {

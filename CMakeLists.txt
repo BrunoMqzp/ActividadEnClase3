@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(SOURCES
         main.cpp
         MyMathLib.h
+	MetodosFactorial.h
+	MetodosOperaciones.h
 )
 
 
@@ -30,6 +32,8 @@ if(ENABLE_TESTING)
     # Archivos de pruebas
     set(TEST_SOURCES
         test.cpp
+	tests/test_Factorial.cpp
+	tests/test_Operaciones.cpp
     )
 
     # Crear ejecutable de pruebas
