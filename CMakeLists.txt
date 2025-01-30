@@ -3,6 +3,10 @@ project(unit_test)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# Incluir los archivos de cabecera
+
+include_directories(${CMAKE_SOURCE_DIR})
+
 set(SOURCES
         main.cpp
         MyMathLib.h
@@ -12,7 +16,10 @@ set(SOURCES
 )
 
 
-add_executable(unit_test main.cpp)
+# Crear el ejecutable para tu código principal
+
+add_executable(main ${SOURCES})
+
 
 # Opciones
 option(ENABLE_TESTING "Enable a Unit Testing build." ON)
