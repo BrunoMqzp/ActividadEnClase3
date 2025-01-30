@@ -1,4 +1,4 @@
-#include "MetodosOperaciones.h"
+#include "../MetodosOperaciones.h"
 #include <gtest/gtest.h>
 
 TEST(OperacionesTest, Suma) {
